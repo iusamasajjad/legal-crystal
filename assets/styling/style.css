@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* background-images */
+.line-bg{
+    background-image: url('../images/bg-linew.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.hero-bg{
+    background-image: url('../images/hero-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, 4%;
+    width: 90%;
+}
+.bg-blue{
+    background-image: url('../images/bg-blue.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us{
+    background-image: url('../images/About-us.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricing-bg{
+    background-image: url('../images/pricing-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* colors */
+.light-white{
+   background: #acabc1;
+}
+
+/* hover-effects */
+.pricing-card:hover p{
+    color: white !important;
+}
+.pricing-card:hover button{
+    background: white;
+    color: black !important;
+}
+.pricing-card:hover{
+    transform: scale(1.2);
+    transition: 500ms;
+    cursor: pointer;
+    stroke: white !important;
+}
+/* slider-controls */
+.slick-slide {
+    margin: 0px 30px !important;
+}
+.slick-prev{
+    background: unset !important;
+    border-radius: 50%;
+    top: -25px !important;
+    right: 65px !important;
+    left: unset !important;
+    background: #eaecff !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+.slick-next{
+    background: unset !important;
+    top: -25px !important;
+    right: 20px !important;
+    border-radius: 50%;
+    background: #eaecff !important;
+    width: 40px !important;
+    height: 40px !important;
+
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 20px !important;
+    line-height: unset !important;
+    opacity: .75;
+    color: black !important;
+}
+.slick-next:hover{
+    background: blue !important;
+}
+.slick-next:hover.slick-next:before{
+    color: white !important;
+}
+.slick-prev:hover{
+    background: blue !important;
+}
+.slick-prev:hover.slick-prev:before{
+    color: white !important;
+}
+.slick-next:before{
+    content: '>' !important;
+}
+.slick-prev:before{
+    content: '<' !important;
+}
+
+button:hover{
+    opacity: 0.8;
+}
