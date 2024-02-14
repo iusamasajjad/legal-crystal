@@ -119,3 +119,21 @@ body{
 button:hover{
     opacity: 0.8;
 }
+
+/* mobile-menu */
+.overlay {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    z-index: 1;
+    background-color: #3182ce;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.disply-none{
+    display: none;
+  }

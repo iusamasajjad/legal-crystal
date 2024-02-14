@@ -57,22 +57,89 @@
                 >
               </li>
             </div>
-            <button class="px-4 py-2 rounded-full bg-blue-600 text-white">
+            <button
+              class="px-4 lg:text-sm text-xs py-2 rounded-full bg-blue-600 text-white"
+            >
               GET STARTED
             </button>
           </ul>
         </nav>
       </header>
 
-      <!-- mobile-menu -->
-      <div class="lg:hidden block">
-        <div class="flex justify-between items-center px-4 py-3">
+      <!-- ==================== mobile-menu =============== -->
+      <!-- Mobile menu button-->
+      <div class="py-4 px-5 flex justify-between items-center xl:hidden">
+        <!-- Mobile menu button-->
+        <div>
           <div>
-            <img width="150" src="./assets/images/LegalCrystal.png" alt="legalCrystal" />
+            <li class="w-1/2 flex items-center">
+              <a href=""
+                ><img src="./assets/images/LegalCrystal.png" alt="legalCrystal"
+              /></a>
+            </li>
           </div>
-          <button class="px-4 py-2 rounded-full bg-blue-600 text-white">
+        </div>
+        <div class="flex gap-2 items-center">
+          <button class="px-4 text-xs py-2 rounded-full bg-blue-600 text-white">
             GET STARTED
           </button>
+          <button
+            onclick="menuToggle()"
+            type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 text-white bg-blue-600 hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          >
+            <svg
+              class="block h-6 text-white w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="">
+        <div class="text-center mt-4 overlay" id="mobile-menu">
+          <a
+            href="javascript:void(0)"
+            onclick="menuClose()"
+            class="closebtn text-6xl absolute top-4 right-4 mr-10 font-semibold text-white"
+            >&times;</a
+          >
+          <div class="space-y-1 mt-16 px-2 pt-2 pb-3">
+            <a
+              href="./index.html"
+              class="hover:bg-gray-900 text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+              href="./about.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+
+            <a
+              href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >About us</a
+            >
+            <a
+              href="./faq.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contact us</a
+            >
+          </div>
         </div>
       </div>
       <!-- ================== hero-section ========================= -->
@@ -129,7 +196,7 @@
         </div>
         <div>
           <div class="bg-blue lg:h-[40vh] py-4 flex justify-center items-end">
-            <div class="flex lg:w-1/2 w-full justify-between">
+            <div class="flex mx-3 lg:mx-0 lg:w-1/2 w-full justify-between">
               <div class="text-center">
                 <h1 class="text-white lg:text-2xl font-bold">$76 billion</h1>
                 <p class="text-gray-400 text-sm py-4">Profit generated</p>
@@ -988,6 +1055,18 @@
           ],
         })
       })
+
+      // ============ mobile-hamburger-function
+      // menu-function
+
+      function menuToggle() {
+        var x = document.getElementById("mobile-menu")
+        x.style.width = "100%"
+      }
+      function menuClose() {
+        var x = document.getElementById("mobile-menu")
+        x.style.width = "0%"
+      }
     </script>
   </body>
 </html>
