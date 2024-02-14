@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styling/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Legal Crystal</title>
+  </head>
+  <body>
+    <div>
+      <!-- ================== header-section ========================= -->
+      <header class="container mx-auto py-4">
+        <nav>
+          <ul class="flex justify-between px-3 lg:px-0 items-center">
+            <div class="w-[40%] lg:w-unset">
+              <li>
+                <a href="./index.html"
+                  ><img
+                    src="./assets/images/LegalCrystal.png"
+                    alt="legalCrystal"
+                /></a>
+              </li>
+            </div>
+            <div class="flex gap-8 items-center">
+              <li>
+                <a class="text-gray-500 hover:text-blue-800" href=""
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-500 hover:text-blue-800" href=""
+                  >Contact us</a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <!-- ================== contact-section ========================= -->
+      <div>
+        <div class="line-bg relative">
+          <div
+            class="container mx-auto flex flex-col lg:flex-row gap-5 justify-center"
+          >
+            <div class="lg:w-[70%] mx-3 lg:mx-0">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+                <h1 class="text-2xl text-black">Contact Person</h1>
+                <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
+                <p class="text-gray-400 text-sm">
+                  Please provide the name of the person responsible for this
+                  order whom we may contact if additional information is needed.
+                </p>
+                <form class="mt-5" action="">
+                  <div class="flex gap-5 justify-between">
+                    <div class="w-1/2">
+                      <p class="text-black">First Name</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Enter First name"
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <p class="text-black">Last Name</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Enter Last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex mt-5 gap-5 justify-between">
+                    <div class="w-1/2">
+                      <p class="text-black">Email Address</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Enter email address"
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <p class="text-black">Mobile Phone</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="number"
+                        name=""
+                        id=""
+                        placeholder="XXX XXXXXX XXXX"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-4 flex items-center gap-2">
+                    <input id="check" type="checkbox" />
+                    <label class="text-sm" for="check"
+                      >I consent to receiving SMS text messages and phone call
+                      from Legal Crystal.
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="bg-[#f6f7f9] mt-4 shadow-md rounded-2xl px-6 py-6">
+                <h2 class="text-2xl text-black">Mailing Address</h2>
+                <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
+                <p class="text-gray-400 text-sm">
+                  Please enter mailing address where you will got your physical
+                  mails.
+                </p>
+                <form class="mt-5" action="">
+                  <div class="w-full">
+                    <p class="text-black">Country</p>
+                    <input
+                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Input Country"
+                    />
+                  </div>
+                  <div class="flex mt-5 gap-5 justify-between">
+                    <div class="w-1/2">
+                      <p class="text-black">Street Address</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Input Street address"
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <p class="text-black">Address (Cont)</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Input address cont"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full mt-5">
+                    <p class="text-black">City</p>
+                    <input
+                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Input city"
+                    />
+                  </div>
+                  <div class="flex mt-5 gap-5 justify-between">
+                    <div class="w-1/2">
+                      <p class="text-black">State</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Input State"
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <p class="text-black">Zip Code</p>
+                      <input
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        type="number"
+                        name=""
+                        id=""
+                        placeholder="Input Zip Code"
+                      />
+                    </div>
+                  </div>
+                </form>
+                <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="flex gap-2">
+                    <div>
+                      <img
+                        width="50"
+                        src="./assets/images/lamp-charge.png"
+                        alt="lamp"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-black">How will this address used?</p>
+                      <p class="text-black text-sm opacity-50 mt-2">
+                        The contact address the primacy address used for the
+                        delivery of any documents or products related to your
+                        order. This address is used for internal purposes only
+                        and will not be shared with any third parties or other
+                        outside agencies unless provided in sub-request pages of
+                        the order process which request the intake of an address
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-5 flex justify-between">
+                <div>
+                  <button
+                    disabled
+                    class="px-8 py-2 rounded-full bg-blue-600 text-white"
+                  >
+                    ← Back
+                  </button>
+                </div>
+                <div>
+                  <a href="./step2.html">
+                    <button
+                      class="px-8 py-2 rounded-full bg-blue-600 text-white"
+                    >
+                      Next →
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[30%] mx-3 lg:mx-0">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+                <h3 class="text-2xl text-black text-center">Order Summary</h3>
+                <div class="w-full h-8 my-4 bg-white rounded-full">
+                  <div
+                    class="w-[25%] h-8 flex items-center px-3 text-white bg-blue-600 rounded-full"
+                  >
+                    25%
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Entity Type</p>
+                  <p class="text-black text-sm">LLC</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Gold Package</p>
+                  <p class="text-black text-sm">$199</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    FL State Filing Fee
+                  </p>
+                  <p class="text-black text-sm">$125</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Banking Resolution
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Operating Agreement
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">EIN / Tax ID #</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Electronic Delivery
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="w-full bg-gray-200 h-[1px] my-5"></div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Total</p>
+                  <p class="text-black text-sm">$324</p>
+                </div>
+              </div>
+              <div class="bg-black shadow-md rounded-2xl px-6 py-6 mt-4">
+                <div class="flex justify-center">
+                  <div><img src="./assets/images/phone.png" alt="phone" /></div>
+                </div>
+                <p class="text-white text-2xl text-center my-2">Contact us</p>
+                <p class="text-white opacity-50 text-center my-2">
+                  If have any issue please feel free to contact us to clear your
+                  queries.
+                </p>
+                <div class="flex justify-center">
+                  <button
+                    class="px-4 mt-3 py-2 rounded-full bg-blue-600 text-white"
+                  >
+                    Apply for Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ================== footer-section ========================= -->
+      <footer class="bg-[#f6f7f9] py-2 mt-5">
+        <div
+          class="flex container mx-auto flex-col-reverse gap-3 lg:gap-0 lg:flex-row items-center justify-between my-8"
+        >
+          <div>
+            <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <a href="#"
+                ><img src="./assets/images/instagram.png" alt="instagram"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img src="./assets/images/facebook.png" alt="facebook"
+              /></a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/images/twitter.png" alt="twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/images/linkdin.png" alt="linkdin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
