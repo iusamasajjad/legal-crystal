@@ -363,13 +363,12 @@
                   </a>
                 </div>
                 <div>
-                  <a href="./step8.html">
-                    <button
-                      class="px-8 py-2 rounded-full bg-blue-600 text-white"
-                    >
-                      Next →
-                    </button>
-                  </a>
+                  <button
+                    onclick="show(dialogBox)"
+                    class="px-8 py-2 rounded-full bg-blue-600 text-white"
+                  >
+                    Next →
+                  </button>
                 </div>
               </div>
             </div>
@@ -562,6 +561,98 @@
           </div>
         </div>
       </footer>
+      <!-- confirmation-dialog-box -->
+      <div id="dialogBox" class="hidden">
+        <div
+          class="fixed inset-0 flex items-center justify-center z-50 backdrop-blur confirm-dialog"
+        >
+          <div
+            class="relative px-4 min-h-screen md:flex md:items-center md:justify-center"
+          >
+            <div class="opacity-25 w-full h-full absolute z-10 inset-0"></div>
+            <div
+              class="bg-white rounded-lg md:max-w-lg md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative shadow-lg"
+            >
+              <div class="items-center">
+                <div
+                  class="flex items-center justify-center w-20 h-20 flex-shrink-0 mx-auto"
+                >
+                  <img src="./assets/images/dialog.png" alt="dialog" />
+                </div>
+                <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+                  <p class="font-bold text-lg text-center">Confirm</p>
+                  <p class="text-sm text-center text-gray-700 mt-1">
+                    Please review and agree to the statements listed below in
+                    order for us prepare the SSA application for a non-US
+                    citizen.
+                  </p>
+                  <div class="flex mt-5 gap-2 items-start">
+                    <p class="text-[#2F45FF] font-semibold text-lg">✓</p>
+                    <p class="text-sm mt-1 font-light">
+                      I am not a citizen of the United States.
+                    </p>
+                  </div>
+                  <div class="flex mt-1 gap-2">
+                    <p class="text-[#2F45FF] font-semibold text-lg">✓</p>
+                    <p class="text-sm mt-1 font-light">
+                      I have never been issued a Social Security Number.
+                    </p>
+                  </div>
+                  <div class="flex mt-1 gap-2">
+                    <p class="text-[#2F45FF] font-semibold text-lg">✓</p>
+                    <p class="text-sm mt-1 font-light">
+                      A prepared SS4 Application will be provided and will
+                      require my digital signature prior to being delivered to
+                      the IRS.
+                    </p>
+                  </div>
+                  <div class="bg-[#f1f1f1] mt-5 py-3 px-5 rounded-2xl">
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img
+                          width="40"
+                          src="./assets/images/lamp-charge.png"
+                          alt="lamp"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-black text-xs">
+                          For foreign individuals. IRS does not offer an
+                          immediate obtainment of the EIN. THe timeframe to
+                          obtain the EIN could take up to 3 or more months.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-center md:text-right mt-4 flex md:justify-center"
+              >
+                <div>
+                  <button
+                    onclick="hide(dialogBox)"
+                    id="confirm-cancel-btn"
+                    class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-100 rounded-full font-light text-blue-300 text-sm mt-4 md:mt-0 md:order-1"
+                  >
+                    cancel
+                  </button>
+                </div>
+                <div>
+                  <a href="./step8.html">
+                    <button
+                      id="confirm-delete-btn"
+                      class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-700 text-white rounded-full font-semibold text-sm md:ml-2 md:order-2"
+                    >
+                      I Agree
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       // set content on click
@@ -603,6 +694,16 @@
 
         $el.addClass("checkActive")
         $($el.data("rel")).show()
+      }
+      // Show an element
+      var show = function (elem) {
+        elem.style.display = "block"
+        // document.getElementById("dialogBox").style.display = "block"
+      }
+
+      // Hide an element
+      var hide = function (elem) {
+        elem.style.display = "none"
       }
     </script>
   </body>
