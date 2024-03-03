@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styling/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Legal Crystal</title>
+  </head>
+  <body>
+    <div>
+      <!-- ================== header-section ========================= -->
+      <header class="container mx-auto py-4">
+        <nav>
+          <ul class="flex justify-between px-3 lg:px-0 items-center">
+            <div class="w-[40%] lg:w-unset">
+              <li>
+                <a href="./index.html"
+                  ><img
+                    src="./assets/images/LegalCrystal.png"
+                    alt="legalCrystal"
+                /></a>
+              </li>
+            </div>
+            <div class="flex gap-8 items-center">
+              <li>
+                <a class="text-gray-500 hover:text-blue-800" href=""
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-500 hover:text-blue-800" href=""
+                  >Contact us</a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <!-- ================== contact-section ========================= -->
+      <div>
+        <div class="line-bg relative">
+          <div
+            class="container mx-auto flex flex-col lg:flex-row gap-5 justify-center"
+          >
+            <div class="lg:w-[70%] mx-3 lg:mx-0">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+                <h1 class="text-2xl text-black">Billing Information</h1>
+                <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
+                <p class="font-light mt-3">
+                  Select your Payment Methods to pay your total bill of Company
+                  creation. This is one time payment.
+                </p>
+                <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="flex justify-between items-center gap-2">
+                    <div>
+                      <p>Paypal</p>
+                    </div>
+                    <div>
+                      <img src="./assets/images/Paypal.png" alt="paypal" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="flex justify-between items-center gap-2">
+                    <div>
+                      <p>Credit / Debit Card</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div>
+                        <img
+                          src="./assets/images/master.png"
+                          alt="master-card"
+                        />
+                      </div>
+                      <div>
+                        <img src="./assets/images/amex.png" alt="amex" />
+                      </div>
+                      <div>
+                        <img src="./assets/images/visa.png" alt="visa-card" />
+                      </div>
+                      <div>
+                        <img
+                          src="./assets/images/discover.png"
+                          alt="discover"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-xs font-ligh opacity-50">+12 more</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="company">
+                  <p class="mt-5 font-bold">Credit Card Information</p>
+                  <div class="mt-8">
+                    <div>
+                      <label class="checkBoxContainer flex gap-3 w-fit pr-8"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.1596 10.87C12.0596 10.86 11.9396 10.86 11.8296 10.87C9.44957 10.79 7.55957 8.84 7.55957 6.44C7.55957 3.99 9.53957 2 11.9996 2C14.4496 2 16.4396 3.99 16.4396 6.44C16.4296 8.84 14.5396 10.79 12.1596 10.87Z"
+                            stroke="#2F44FF"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.15973 14.56C4.73973 16.18 4.73973 18.82 7.15973 20.43C9.90973 22.27 14.4197 22.27 17.1697 20.43C19.5897 18.81 19.5897 16.17 17.1697 14.56C14.4297 12.73 9.91973 12.73 7.15973 14.56Z"
+                            stroke="#2F44FF"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="text-sm">Ronny Rodrigueiz</span>
+                        <input type="checkbox" checked />
+                        <span class="checkmark left-0"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <form class="mt-10" action="">
+                    <div class="flex gap-5 justify-between">
+                      <div class="w-1/2">
+                        <p class="text-black">Card Holder Name*</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Cash Holder Name"
+                        />
+                      </div>
+                      <div class="w-1/2">
+                        <p class="text-black">Card Number</p>
+                        <div class="relative">
+                          <input
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            type="number"
+                            name=""
+                            id=""
+                            placeholder="Card Number"
+                          />
+                          <div class="absolute right-12 top-5">
+                            <img
+                              src="./assets/images/master.png"
+                              alt="master-card"
+                            />
+                          </div>
+                          <div class="absolute right-3 top-5">
+                            <img
+                              src="./assets/images/visa.png"
+                              alt="visa-card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex mt-5 gap-5 justify-between">
+                      <div class="w-1/2">
+                        <p class="text-black">Expiry Date</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="date"
+                          name=""
+                          id=""
+                          placeholder="Enter Expiry Date"
+                        />
+                      </div>
+                      <div class="w-1/2">
+                        <p class="text-black">CVV / CVC</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="number"
+                          name=""
+                          id=""
+                          placeholder="3 digits"
+                        />
+                      </div>
+                    </div>
+                    <p class="mt-5 font-bold">Billing Address</p>
+                    <div class="mt-5">
+                      <label class="checkBoxContainer flex gap-3 w-fit pr-8">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                            stroke="#0D0D25"
+                            stroke-width="2"
+                          />
+                          <path
+                            d="M3.61971 8.49C5.58971 -0.169998 18.4197 -0.159997 20.3797 8.5C21.5297 13.58 18.3697 17.88 15.5997 20.54C13.5897 22.48 10.4097 22.48 8.38971 20.54C5.62971 17.88 2.46971 13.57 3.61971 8.49Z"
+                            stroke="#0D0D25"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <span class="text-sm mt-1"
+                          >20230 Ne 3rd Ct Apt 2 Miami, FL 22179, US</span
+                        >
+                        <input type="checkbox" checked />
+                        <span class="checkmark left-0"></span>
+                      </label>
+                    </div>
+                    <div class="flex gap-5 justify-between">
+                      <div class="w-1/2">
+                        <p class="text-black">Country</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Enter Country name"
+                        />
+                      </div>
+                      <div class="w-1/2">
+                        <p class="text-black">State</p>
+                        <div class="select">
+                          <select
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            name="stateList"
+                            id="stateList"
+                          >
+                            <option value="State">Select State</option>
+                            <option value="saab">A</option>
+                            <option value="mercedes">B</option>
+                            <option value="audi">C</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex mt-8 gap-5 justify-between">
+                      <div class="w-1/2">
+                        <p class="text-black">Street Address</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Enter Street Address"
+                        />
+                      </div>
+                      <div class="w-1/2">
+                        <p class="text-black">Address (Cont)</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Enter Address Cont"
+                        />
+                      </div>
+                    </div>
+                    <div class="flex mt-8 gap-5 justify-between">
+                      <div class="w-1/2">
+                        <p class="text-black">City</p>
+                        <div class="select">
+                          <select
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            name="stateList"
+                            id="stateList"
+                          >
+                            <option value="State">Select City</option>
+                            <option value="saab">A</option>
+                            <option value="mercedes">B</option>
+                            <option value="audi">C</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="w-1/2">
+                        <p class="text-black">Zip Code</p>
+                        <input
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          type="number"
+                          name=""
+                          id=""
+                          placeholder="Enter Zip code"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="flex gap-2">
+                    <div class="mt-2">
+                      <img
+                        width="25"
+                        src="./assets/images/lamp-charge.png"
+                        alt="lamp"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-gray-600 text-sm mt-2">
+                        In orter to svald delays enlior the cancellation of
+                        yourorder ensure that the billing audress
+                        <span class="text-black"
+                          >provided reconciles with the payment card used.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <label
+                    class="checkBoxContainer flex items-center gap-3 w-fit pr-4"
+                  >
+                    <p class="text-sm text-gray-500">
+                      I agree to the
+                      <span class="text-black">Legal Statement</span> and
+                      <span class="text-black">Cancellation Policy</span>
+                    </p>
+                    <input type="checkbox" checked />
+                    <span class="checkmark left-1 top-[-1px]"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="my-5 flex justify-between">
+                <div>
+                  <a href="./step9.html">
+                    <button
+                      class="px-8 py-2 rounded-full bg-blue-600 text-white"
+                    >
+                      ← Back
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <button
+                      class="px-8 py-2 rounded-full bg-blue-600 text-white"
+                    >
+                      Complete & Pay Now →
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <!-- ===================== Frequently-asked-questions-section ================== -->
+              <div class="relative">
+                <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6 mt-10">
+                  <h1 class="text-2xl text-black">
+                    Frequently Asked Question’s
+                  </h1>
+                  <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
+                  <p class="font-light mt-3">
+                    Please explore the FAQ’s to clear your queries and make sure
+                    all the things those you want to make done.
+                  </p>
+                  <div>
+                    <div class="mx-5 lg:mx-0 text-black">
+                      <div id="q1" class="mt-8">
+                        <div class="border-b border-[#ffffff0d]">
+                          <div
+                            onclick="toggle1(event)"
+                            class="flex cursor-pointer relative py-3 items-center justify-between"
+                          >
+                            <h4>Are there any hidden costs?</h4>
+                            <button class="py-3 absolute right-0">
+                              <p
+                                class="text-black plusicon-hide cursor-pointer text-xl font-bold"
+                              >
+                                ⌵
+                              </p>
+                              <p
+                                class="text-black minusicon-hide hidden cursor-pointer text-lg"
+                              >
+                                ⌃
+                              </p>
+                            </button>
+                          </div>
+                          <div class="toggle-1 disply-none">
+                            <p class="text-sm font-light">
+                              Please explore the FAQ’s to clear your queries and
+                              make sure all the things those you want to make
+                              done.Please explore the FAQ’s to clear your
+                              queries and make sure all the things those you
+                              want to make done.Please explore the FAQ’s to
+                              clear your queries and make sure all the things
+                              those you want to make done.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="q2" class="mt-2">
+                        <div class="border-b border-[#ffffff0d]">
+                          <div
+                            onclick="toggle1(event)"
+                            class="flex cursor-pointer relative py-3 items-center justify-between"
+                          >
+                            <h4>Is the Registered Agent service truly free?</h4>
+                            <button class="py-3 absolute right-0">
+                              <p
+                                class="text-black plusicon-hide cursor-pointer text-xl font-bold"
+                              >
+                                ⌵
+                              </p>
+                              <p
+                                class="text-black minusicon-hide hidden cursor-pointer text-lg"
+                              >
+                                ⌃
+                              </p>
+                            </button>
+                          </div>
+                          <div class="toggle-1 disply-none">
+                            <p class="text-sm font-light">
+                              Please explore the FAQ’s to clear your queries and
+                              make sure all the things those you want to make
+                              done.Please explore the FAQ’s to clear your
+                              queries and make sure all the things those you
+                              want to make done.Please explore the FAQ’s to
+                              clear your queries and make sure all the things
+                              those you want to make done.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="q3" class="mt-2">
+                        <div class="border-b border-[#ffffff0d]">
+                          <div
+                            onclick="toggle1(event)"
+                            class="flex cursor-pointer relative py-3 items-center justify-between"
+                          >
+                            <h4>Is the Registered Agent service truly free?</h4>
+                            <button class="py-3 absolute right-0">
+                              <p
+                                class="text-black plusicon-hide cursor-pointer text-xl font-bold"
+                              >
+                                ⌵
+                              </p>
+                              <p
+                                class="text-black minusicon-hide hidden cursor-pointer text-lg"
+                              >
+                                ⌃
+                              </p>
+                            </button>
+                          </div>
+                          <div class="toggle-1 disply-none">
+                            <p class="text-sm font-light">
+                              Please explore the FAQ’s to clear your queries and
+                              make sure all the things those you want to make
+                              done.Please explore the FAQ’s to clear your
+                              queries and make sure all the things those you
+                              want to make done.Please explore the FAQ’s to
+                              clear your queries and make sure all the things
+                              those you want to make done.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="q4" class="mt-2">
+                        <div class="border-b border-[#ffffff0d]">
+                          <div
+                            onclick="toggle1(event)"
+                            class="flex cursor-pointer relative py-3 items-center justify-between"
+                          >
+                            <h4>Is the Registered Agent service truly free?</h4>
+                            <button class="py-3 absolute right-0">
+                              <p
+                                class="text-black plusicon-hide cursor-pointer text-xl font-bold"
+                              >
+                                ⌵
+                              </p>
+                              <p
+                                class="text-black minusicon-hide hidden cursor-pointer text-lg"
+                              >
+                                ⌃
+                              </p>
+                            </button>
+                          </div>
+                          <div class="toggle-1 disply-none">
+                            <p class="text-sm font-light">
+                              Please explore the FAQ’s to clear your queries and
+                              make sure all the things those you want to make
+                              done.Please explore the FAQ’s to clear your
+                              queries and make sure all the things those you
+                              want to make done.Please explore the FAQ’s to
+                              clear your queries and make sure all the things
+                              those you want to make done.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="q5" class="mt-2 mb-10">
+                        <div class="border-b border-[#ffffff0d]">
+                          <div
+                            onclick="toggle1(event)"
+                            class="flex cursor-pointer relative py-3 items-center justify-between"
+                          >
+                            <h4>Is the Registered Agent service truly free?</h4>
+                            <button class="py-3 absolute right-0">
+                              <p
+                                class="text-black plusicon-hide cursor-pointer text-xl font-bold"
+                              >
+                                ⌵
+                              </p>
+                              <p
+                                class="text-black minusicon-hide hidden cursor-pointer text-lg"
+                              >
+                                ⌃
+                              </p>
+                            </button>
+                          </div>
+                          <div class="toggle-1 disply-none">
+                            <p class="text-sm font-light">
+                              Please explore the FAQ’s to clear your queries and
+                              make sure all the things those you want to make
+                              done.Please explore the FAQ’s to clear your
+                              queries and make sure all the things those you
+                              want to make done.Please explore the FAQ’s to
+                              clear your queries and make sure all the things
+                              those you want to make done.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute top-0 left-10">
+                  <img
+                    class="opacity-30 z-[-1]"
+                    width="150"
+                    src="./assets/images/dots.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute top-64 right-12">
+                  <img
+                    class="opacity-30 z-[-1]"
+                    width="150"
+                    src="./assets/images/dots.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[30%] mx-3 lg:mx-0">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+                <h3 class="text-2xl text-black text-center">Order Summary</h3>
+                <div class="w-full h-8 my-4 bg-white rounded-full">
+                  <div
+                    class="w-[95%] h-8 flex justify-center items-center px-3 text-white bg-blue-600 rounded-full"
+                  >
+                    95%
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Entity Type</p>
+                  <p class="text-black text-sm">LLC</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Gold Package</p>
+                  <p class="text-black text-sm">$199</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    FL State Filing Fee
+                  </p>
+                  <p class="text-black text-sm">$125</p>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Banking Resolution
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Operating Agreement
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">EIN / Tax ID #</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">
+                    Electronic Delivery
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
+                      stroke="#2F44FF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="w-full bg-gray-200 h-[1px] my-5"></div>
+                <div class="flex justify-between items-center pt-3 gap-2">
+                  <p class="text-black opacity-50 text-sm">Total</p>
+                  <p class="text-black text-sm">$324</p>
+                </div>
+              </div>
+              <div class="bg-black shadow-md rounded-2xl px-6 py-6 mt-4">
+                <div class="flex justify-center">
+                  <div><img src="./assets/images/phone.png" alt="phone" /></div>
+                </div>
+                <p class="text-white text-2xl text-center my-2">Contact us</p>
+                <p class="text-white opacity-50 text-center my-2">
+                  If have any issue please feel free to contact us to clear your
+                  queries.
+                </p>
+                <div class="flex justify-center">
+                  <button
+                    class="px-4 mt-3 py-2 rounded-full bg-blue-600 text-white"
+                  >
+                    Apply for Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ================== footer-section ========================= -->
+      <footer class="bg-[#f6f7f9] py-2 mt-5">
+        <div
+          class="flex container mx-auto flex-col-reverse gap-3 lg:gap-0 lg:flex-row items-center justify-between my-8"
+        >
+          <div>
+            <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div>
+              <a href="#"
+                ><img src="./assets/images/instagram.png" alt="instagram"
+              /></a>
+            </div>
+            <div>
+              <a href="#"
+                ><img src="./assets/images/facebook.png" alt="facebook"
+              /></a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/images/twitter.png" alt="twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/images/linkdin.png" alt="linkdin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // faq-section
+      function toggle1(e) {
+        var product = e.target.parentElement
+        let iconShow = product.getElementsByClassName("plusicon-hide")[0]
+        let iconHide = product.getElementsByClassName("minusicon-hide")[0]
+        let toggleDiv = product.getElementsByClassName("toggle-1")[0]
+        if (toggleDiv.classList.contains("disply-none")) {
+          toggleDiv.classList.remove("disply-none")
+          iconShow.style.display = "none"
+          iconHide.style.display = "flex"
+        } else {
+          toggleDiv.classList.add("disply-none")
+          iconShow.style.display = "flex"
+          iconHide.style.display = "none"
+        }
+      }
+    </script>
+  </body>
+</html>
