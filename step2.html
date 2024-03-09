@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Legal Crystal</title>
   </head>
   <body>
@@ -57,7 +59,10 @@
                   Select the filling time that best meet your needs.
                 </p>
                 <div class="mt-5 flex gap-3">
-                  <div class="bg-white w-1/2 rounded-2xl px-4 py-4">
+                  <div
+                    data-rel="#individual"
+                    class="bg-white border border-gray-200 cursor-pointer w-1/2 rounded-2xl px-4 py-4 button active"
+                  >
                     <div class="flex justify-between">
                       <p>🗓️ 3 weeks filing time</p>
                       <p>$0</p>
@@ -76,9 +81,12 @@
                     </div>
                   </div>
                   <div
-                    class="bg-white relative border border-blue-700 w-1/2 rounded-2xl px-4 py-4"
+                    data-rel="#company"
+                    class="bg-white relative border border-gray-200 cursor-pointer w-1/2 rounded-2xl px-4 py-4 button"
                   >
-                    <div class="absolute bottom-[-35px] right-[-35px]">
+                    <div
+                      class="absolute bottom-[-35px] right-[-35px]"
+                    >
                       <img src="./assets/images/fast.png" alt="fast" />
                     </div>
                     <div class="flex justify-between">
@@ -311,5 +319,23 @@
         </div>
       </footer>
     </div>
+    <script>
+      // set content on click
+      $(".button").click(function (e) {
+        e.preventDefault()
+        setContent($(this))
+      })
+
+      // set content on load
+      $(".button.active").length && setContent($(".button.active"))
+
+      function setContent($el) {
+        $(".button").removeClass("active")
+        $(".plan").hide()
+
+        $el.addClass("active")
+        $($el.data("rel")).show()
+      }
+    </script>
   </body>
 </html>
