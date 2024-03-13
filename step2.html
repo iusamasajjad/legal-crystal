@@ -19,10 +19,11 @@
       <header class="container mx-auto py-4">
         <nav>
           <ul class="flex justify-between px-3 lg:px-0 items-center">
-            <div class="w-[40%] lg:w-unset">
+            <div class="lg:w-1/6 w-2/6">
               <li>
                 <a href="./index.html"
                   ><img
+                    class="w-full"
                     src="./assets/images/LegalCrystal.png"
                     alt="legalCrystal"
                 /></a>
@@ -50,7 +51,7 @@
             class="container mx-auto flex flex-col lg:flex-row gap-5 justify-center"
           >
             <div class="lg:w-[70%] mx-3 lg:mx-0">
-              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl lg:px-6 px-2 py-6">
                 <h1 class="text-2xl text-black">State Filing TIme</h1>
                 <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
                 <p class="text-gray-400 text-sm">
@@ -61,9 +62,9 @@
                 <div class="mt-5 flex gap-3">
                   <div
                     data-rel="#individual"
-                    class="bg-white border border-gray-200 cursor-pointer w-1/2 rounded-2xl px-4 py-4 button active"
+                    class="bg-white border border-gray-200 cursor-pointer w-1/2 rounded-2xl lg:px-4 px-1 lg:py-4 py-8 button active"
                   >
-                    <div class="flex justify-between">
+                    <div class="flex lg:text-lg text-xs  justify-between">
                       <p>🗓️ 3 weeks filing time</p>
                       <p>$0</p>
                     </div>
@@ -74,7 +75,7 @@
                           alt="calendar"
                         />
                       </div>
-                      <div>
+                      <div class="lg:text-sm text-xs">
                         <p>Estimated Formation Date:</p>
                         <p class="text-red-500">Thursday, Feburary 29</p>
                       </div>
@@ -82,14 +83,12 @@
                   </div>
                   <div
                     data-rel="#company"
-                    class="bg-white relative border border-gray-200 cursor-pointer w-1/2 rounded-2xl px-4 py-4 button"
+                    class="bg-white relative border border-gray-200 cursor-pointer w-1/2 rounded-2xl lg:px-4 px-1 py-4 button"
                   >
-                    <div
-                      class="absolute bottom-[-35px] right-[-35px]"
-                    >
+                    <div class="absolute bottom-[-35px] right-[-35px]">
                       <img src="./assets/images/fast.png" alt="fast" />
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex lg:text-lg text-xs justify-between">
                       <p>👑 5 business days filing time</p>
                       <p>$45</p>
                     </div>
@@ -100,7 +99,7 @@
                           alt="calendar"
                         />
                       </div>
-                      <div>
+                      <div class="lg:text-sm text-xs">
                         <p>Estimated Formation Date:</p>
                         <p class="text-blue-500">Tuesday, February 06</p>
                       </div>
@@ -294,25 +293,39 @@
           <div>
             <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
           </div>
-          <div class="flex gap-3 items-center">
-            <div>
+          <div class="flex gap-3 lg:items-center justify-center lg:justify-end">
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/instagram.png" alt="instagram"
+                ><img
+                  class="w-full"
+                  src="./assets/images/instagram.png"
+                  alt="instagram"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/facebook.png" alt="facebook"
+                ><img
+                  class="w-full"
+                  src="./assets/images/facebook.png"
+                  alt="facebook"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/twitter.png" alt="twitter" />
+                <img
+                  class="w-full"
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                />
               </a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/linkdin.png" alt="linkdin" />
+                <img
+                  class="w-full"
+                  src="./assets/images/linkdin.png"
+                  alt="linkdin"
+                />
               </a>
             </div>
           </div>

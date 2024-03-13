@@ -18,10 +18,11 @@
       <header class="container mx-auto py-4">
         <nav>
           <ul class="flex justify-between px-3 lg:px-0 items-center">
-            <div class="w-[40%] lg:w-unset">
+            <div class="lg:w-1/6 w-2/6">
               <li>
                 <a href="./index.html"
                   ><img
+                    class="w-full"
                     src="./assets/images/LegalCrystal.png"
                     alt="legalCrystal"
                 /></a>
@@ -49,7 +50,7 @@
             class="container mx-auto flex flex-col lg:flex-row gap-5 justify-center"
           >
             <div class="lg:w-[70%] mx-3 lg:mx-0">
-              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl lg:px-6 px-2 py-6">
                 <h1 class="text-2xl text-black">
                   EIN / Tax identification Number Information
                 </h1>
@@ -86,7 +87,7 @@
                   </div>
                 </div>
                 <div class="mt-5">
-                  <label class="checkBoxContainer flex gap-3 w-fit pr-8"
+                  <label class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -119,7 +120,7 @@
                     <div class="w-1/2">
                       <p class="text-black">First Name</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
@@ -129,7 +130,7 @@
                     <div class="w-1/2">
                       <p class="text-black">Last Name</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
@@ -142,7 +143,7 @@
                   <div class="mt-5 flex gap-3">
                     <div
                       data-rel="#itn"
-                      class="bg-white border border-gray-200 cursor-pointer w-1/4 rounded-2xl px-4 py-4 button active"
+                      class="bg-white border border-gray-200 cursor-pointer w-1/4 rounded-2xl lg:rounded-full lg:text-sm text-xs px-4 py-4 button active"
                     >
                       <div class="text-center">
                         <p>ITIN</p>
@@ -150,7 +151,7 @@
                     </div>
                     <div
                       data-rel="#ssn"
-                      class="bg-white border border-gray-200 cursor-pointer w-1/4 rounded-2xl px-4 py-4 button"
+                      class="bg-white border border-gray-200 cursor-pointer w-1/4 rounded-2xl lg:rounded-full lg:text-sm text-xs px-4 py-4 button"
                     >
                       <div class="text-center">
                         <p>SSN</p>
@@ -158,7 +159,7 @@
                     </div>
                     <div class="w-2/4">
                       <input
-                        class="py-3 text-center w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 text-center w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
@@ -188,7 +189,7 @@
                       <div class="flex gap-3 w-fit pr-8">
                         <div
                           data-rel="#ownAddress"
-                          class="w-[20px] button3 checkActive cursor-pointer flex justify-center items-center h-[20px] relative rounded bg-gray-300"
+                          class="w-[30px] lg:w-[20px] button3 checkActive cursor-pointer flex justify-center items-center h-[20px] relative rounded bg-gray-300"
                         ></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -217,9 +218,10 @@
                       <div class="flex gap-3 w-fit pr-8">
                         <div
                           data-rel="#legalAddress"
-                          class="w-[20px] button3 cursor-pointer flex justify-center items-center h-[20px] relative rounded bg-gray-300"
+                          class="w-[40px] lg:w-[20px] button3 cursor-pointer flex justify-center items-center h-[20px] relative rounded bg-gray-300"
                         ></div>
                         <svg
+                          class="w-8 lg:w-6"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -253,7 +255,7 @@
                       <div class="w-1/2">
                         <p class="text-black">Country</p>
                         <input
-                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                           type="text"
                           name=""
                           id=""
@@ -264,15 +266,13 @@
                         <p class="text-black">State</p>
                         <div class="select">
                           <select
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             name="stateList"
-                            id="stateList"
+                            id="stateDropdown"
                           >
-                            <option value="State">Select state</option>
-                            <option value="volvo">California</option>
-                            <option value="saab">Texas</option>
-                            <option value="vw">Florida</option>
-                            <option value="audi">Alaska</option>
+                            <option value="" selected disabled>
+                              Select state
+                            </option>
                           </select>
                         </div>
                       </div>
@@ -281,7 +281,7 @@
                       <div class="w-1/2">
                         <p class="text-black">Street Address</p>
                         <input
-                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                           type="text"
                           name=""
                           id=""
@@ -291,7 +291,7 @@
                       <div class="w-1/2">
                         <p class="text-black">Address (Cont)</p>
                         <input
-                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                           type="text"
                           name=""
                           id=""
@@ -304,7 +304,7 @@
                         <p class="text-black">City</p>
                         <div class="select">
                           <select
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             name="stateList"
                             id="stateList"
                           >
@@ -318,7 +318,7 @@
                       <div class="w-1/2">
                         <p class="text-black">Zip Code</p>
                         <input
-                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                          class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                           type="number"
                           name=""
                           id=""
@@ -329,11 +329,11 @@
                   </form>
                 </div>
                 <div id="legalAddress" class="plan2">
-                  <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="bg-white mt-5 py-3 lg:px-5 px-2 rounded-2xl">
                     <div class="flex gap-2">
-                      <div>
+                      <div class="lg:w-6 w-16">
                         <img
-                          width="20"
+                          class="w-full"
                           src="./assets/images/lamp-charge.png"
                           alt="lamp"
                         />
@@ -538,25 +538,39 @@
           <div>
             <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
           </div>
-          <div class="flex gap-3 items-center">
-            <div>
+          <div class="flex gap-3 lg:items-center justify-center lg:justify-end">
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/instagram.png" alt="instagram"
+                ><img
+                  class="w-full"
+                  src="./assets/images/instagram.png"
+                  alt="instagram"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/facebook.png" alt="facebook"
+                ><img
+                  class="w-full"
+                  src="./assets/images/facebook.png"
+                  alt="facebook"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/twitter.png" alt="twitter" />
+                <img
+                  class="w-full"
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                />
               </a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/linkdin.png" alt="linkdin" />
+                <img
+                  class="w-full"
+                  src="./assets/images/linkdin.png"
+                  alt="linkdin"
+                />
               </a>
             </div>
           </div>
@@ -608,10 +622,10 @@
                     </p>
                   </div>
                   <div class="bg-[#f1f1f1] mt-5 py-3 px-5 rounded-2xl">
-                    <div class="flex items-center gap-3">
-                      <div>
+                    <div class="flex lg:items-center items-start gap-3">
+                      <div class="lg:w-10 w-16">
                         <img
-                          width="40"
+                          class="w-full"
                           src="./assets/images/lamp-charge.png"
                           alt="lamp"
                         />
@@ -628,13 +642,13 @@
                 </div>
               </div>
               <div
-                class="text-center md:text-right mt-4 flex md:justify-center"
+                class="text-center md:text-right mt-4 flex justify-center items-center md:justify-center"
               >
                 <div>
                   <button
                     onclick="hide(dialogBox)"
                     id="confirm-cancel-btn"
-                    class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-100 rounded-full font-light text-blue-300 text-sm mt-4 md:mt-0 md:order-1"
+                    class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-100 rounded-full font-light text-blue-300 text-sm md:order-1"
                   >
                     cancel
                   </button>
@@ -643,7 +657,7 @@
                   <a href="./step8.html">
                     <button
                       id="confirm-delete-btn"
-                      class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-700 text-white rounded-full font-semibold text-sm md:ml-2 md:order-2"
+                      class="block w-full md:inline-block md:w-auto px-6 py-3 md:py-2 bg-blue-700 text-white rounded-full font-semibold text-sm  mx-3 md:ml-2 md:order-2"
                     >
                       I Agree
                     </button>
@@ -707,5 +721,6 @@
         elem.style.display = "none"
       }
     </script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>

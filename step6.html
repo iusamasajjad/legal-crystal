@@ -18,10 +18,11 @@
       <header class="container mx-auto py-4">
         <nav>
           <ul class="flex justify-between px-3 lg:px-0 items-center">
-            <div class="w-[40%] lg:w-unset">
+            <div class="lg:w-1/6 w-2/6">
               <li>
                 <a href="./index.html"
                   ><img
+                    class="w-full"
                     src="./assets/images/LegalCrystal.png"
                     alt="legalCrystal"
                 /></a>
@@ -49,14 +50,14 @@
             class="container mx-auto flex flex-col lg:flex-row gap-5 justify-center"
           >
             <div class="lg:w-[70%] mx-3 lg:mx-0">
-              <div class="bg-[#f6f7f9] shadow-md rounded-2xl px-6 py-6">
+              <div class="bg-[#f6f7f9] shadow-md rounded-2xl lg:px-6 px-2 py-6">
                 <h1 class="text-2xl text-black">
                   Florida requires an LLC to appoint a Registered Agent:
                 </h1>
                 <div class="w-full bg-gray-300 my-4 h-[1px]"></div>
                 <div class="flex my-5 gap-2 items-center">
                   <p class="text-[#2F45FF] font-semibold text-lg">✓</p>
-                  <p class="text-gray-400">
+                  <p class="text-gray-400 lg:text-sm text-xs">
                     Only Legal Crystal offers
                     <span class="text-black"
                       >1 full year of Registered Agent service FREE</span
@@ -90,7 +91,7 @@
                       <p>Secure Hold</p>
                     </div>
                     <div class="pt-3">
-                      <p class="text-gray-400">
+                      <p class="text-gray-400 lg:text-sm text-xs">
                         Assign Legal Crystal Legal as my Registered Agent FREE
                         for 1 year
                       </p>
@@ -104,7 +105,7 @@
                       <p>My Hold</p>
                     </div>
                     <div class="pt-3">
-                      <p class="text-gray-400">
+                      <p class="text-gray-400 lg:text-sm text-xs">
                         I would like to act as my own registered agent.
                       </p>
                     </div>
@@ -129,7 +130,7 @@
                         <p>Individual</p>
                       </div>
                       <div class="pt-3">
-                        <p class="text-gray-400">
+                        <p class="text-gray-400 lg:text-sm text-xs">
                           Select if Member is a person.
                         </p>
                       </div>
@@ -142,7 +143,7 @@
                         <p>Company</p>
                       </div>
                       <div class="pt-3">
-                        <p class="text-gray-400">
+                        <p class="text-gray-400 lg:text-sm text-xs">
                           Select if Member is a company.
                         </p>
                       </div>
@@ -151,7 +152,8 @@
                   <div id="individual" class="plan">
                     <div class="mt-8">
                       <div>
-                        <label class="checkBoxContainer flex gap-3 w-fit pr-8"
+                        <label
+                          class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -180,7 +182,9 @@
                         </label>
                       </div>
                       <div>
-                        <label class="checkBoxContainer flex gap-3 w-fit pr-8">
+                        <label
+                          class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -207,8 +211,11 @@
                         </label>
                       </div>
                       <div>
-                        <label class="checkBoxContainer flex gap-3 w-fit pr-8">
+                        <label
+                          class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
+                        >
                           <svg
+                            class="w-8 lg:w-6"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -244,7 +251,7 @@
                         <div class="w-1/2">
                           <p class="text-black">First Name</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -254,7 +261,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Last Name</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -266,7 +273,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Street Address</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -276,7 +283,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Address (Cont)</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -289,15 +296,13 @@
                           <p class="text-black">State</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
-                              id="stateList"
+                              id="stateDropdown2"
                             >
-                              <option value="State">Select state</option>
-                              <option value="volvo">California</option>
-                              <option value="saab">Texas</option>
-                              <option value="vw">Florida</option>
-                              <option value="audi">Alaska</option>
+                              <option value="" selected disabled>
+                                Select state
+                              </option>
                             </select>
                           </div>
                         </div>
@@ -305,7 +310,7 @@
                           <p class="text-black">City</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
                               id="stateList"
                             >
@@ -321,7 +326,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Zip Code</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="number"
                             name=""
                             id=""
@@ -332,7 +337,7 @@
                           <p class="text-black">% of Ownership</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
                               id="stateList"
                             >
@@ -349,7 +354,9 @@
                   <div id="company" class="plan">
                     <div class="mt-8">
                       <div>
-                        <label class="checkBoxContainer flex gap-3 w-fit pr-8">
+                        <label
+                          class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -376,8 +383,11 @@
                         </label>
                       </div>
                       <div>
-                        <label class="checkBoxContainer flex gap-3 w-fit pr-8">
+                        <label
+                          class="checkBoxContainer flex gap-3 w-fit lg:pr-8"
+                        >
                           <svg
+                            class="w-8 lg:w-6"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -409,24 +419,26 @@
                       </div>
                     </div>
                     <form class="mt-10" action="">
-                      <div class="flex gap-5 justify-between">
-                        <div class="w-1/2">
+                      <div
+                        class="flex lg:flex-row flex-col gap-5 justify-between"
+                      >
+                        <div class="lg:w-1/2">
                           <p class="text-black">Company Name</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
                             placeholder="Enter Company name"
                           />
                         </div>
-                        <div class="w-1/2">
+                        <div class="lg:w-1/2">
                           <p class="text-black">
                             Representative Signing on Behalf of Entity
                           </p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
                               id="stateList"
                             >
@@ -442,7 +454,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Street Address</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -452,7 +464,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Address (Cont)</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="text"
                             name=""
                             id=""
@@ -465,15 +477,13 @@
                           <p class="text-black">State</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
-                              id="stateList"
+                              id="stateDropdown"
                             >
-                              <option value="State">Select state</option>
-                              <option value="volvo">California</option>
-                              <option value="saab">Texas</option>
-                              <option value="vw">Florida</option>
-                              <option value="audi">Alaska</option>
+                              <option value="" selected disabled>
+                                Select state
+                              </option>
                             </select>
                           </div>
                         </div>
@@ -481,7 +491,7 @@
                           <p class="text-black">City</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
                               id="stateList"
                             >
@@ -497,7 +507,7 @@
                         <div class="w-1/2">
                           <p class="text-black">Zip Code</p>
                           <input
-                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                            class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                             type="number"
                             name=""
                             id=""
@@ -508,7 +518,7 @@
                           <p class="text-black">% of Ownership</p>
                           <div class="select">
                             <select
-                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                              class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                               name="stateList"
                               id="stateList"
                             >
@@ -522,11 +532,11 @@
                       </div>
                     </form>
                   </div>
-                  <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                  <div class="bg-white mt-5 py-3 lg:px-5 px-2 rounded-2xl">
                     <div class="flex gap-2">
-                      <div>
+                      <div class="lg:w-6 w-16">
                         <img
-                          width="20"
+                          class="w-full"
                           src="./assets/images/lamp-charge.png"
                           alt="lamp"
                         />
@@ -618,9 +628,9 @@
                 <div id="secureHold" class="holder">
                   <div class="mt-8">
                     <div class="flex gap-3">
-                      <div>
+                      <div class="lg:w-8 w-20">
                         <img
-                          width="25"
+                          class="w-full"
                           src="./assets/images/calendar-3.png"
                           alt="tick"
                         />
@@ -642,9 +652,9 @@
                   </div>
                   <div class="mt-8">
                     <div class="flex gap-3">
-                      <div class="mt-1">
+                      <div class="lg:w-8 w-20">
                         <img
-                          width="25"
+                          class="w-full"
                           src="./assets/images/clipboard-tick.png"
                           alt="tick"
                         />
@@ -663,9 +673,9 @@
                   </div>
                   <div class="mt-8">
                     <div class="flex gap-3">
-                      <div>
+                      <div class="lg:w-5 w-10">
                         <img
-                          width="20"
+                          class="w-full"
                           src="./assets/images/wallet.png"
                           alt="tick"
                         />
@@ -682,9 +692,9 @@
                   </div>
                   <div class="mt-8">
                     <div class="flex gap-3">
-                      <div class="mt-1">
+                      <div class="lg:w-8 w-20">
                         <img
-                          width="25"
+                          class="w-full"
                           src="./assets/images/cloud-snow.png"
                           alt="tick"
                         />
@@ -888,25 +898,39 @@
           <div>
             <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
           </div>
-          <div class="flex gap-3 items-center">
-            <div>
+          <div class="flex gap-3 lg:items-center justify-center lg:justify-end">
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/instagram.png" alt="instagram"
+                ><img
+                  class="w-full"
+                  src="./assets/images/instagram.png"
+                  alt="instagram"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/facebook.png" alt="facebook"
+                ><img
+                  class="w-full"
+                  src="./assets/images/facebook.png"
+                  alt="facebook"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/twitter.png" alt="twitter" />
+                <img
+                  class="w-full"
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                />
               </a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/linkdin.png" alt="linkdin" />
+                <img
+                  class="w-full"
+                  src="./assets/images/linkdin.png"
+                  alt="linkdin"
+                />
               </a>
             </div>
           </div>
@@ -943,5 +967,6 @@
         $($el.data("rel")).show()
       }
     </script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>

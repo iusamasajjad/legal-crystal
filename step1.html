@@ -17,10 +17,11 @@
       <header class="container mx-auto py-4">
         <nav>
           <ul class="flex justify-between px-3 lg:px-0 items-center">
-            <div class="w-[40%] lg:w-unset">
+            <div class="lg:w-1/6 w-2/6">
               <li>
                 <a href="./index.html"
                   ><img
+                    class="w-full"
                     src="./assets/images/LegalCrystal.png"
                     alt="legalCrystal"
                 /></a>
@@ -60,7 +61,7 @@
                     <div class="w-1/2">
                       <p class="text-black">First Name</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
@@ -70,7 +71,7 @@
                     <div class="w-1/2">
                       <p class="text-black">Last Name</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
@@ -82,7 +83,7 @@
                     <div class="w-1/2">
                       <p class="text-black">Email Address</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="email"
                         name=""
                         id=""
@@ -92,7 +93,7 @@
                     <div class="w-1/2">
                       <p class="text-black">Mobile Phone</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="number"
                         name=""
                         id=""
@@ -100,9 +101,9 @@
                       />
                     </div>
                   </div>
-                  <div class="mt-4 flex items-center gap-2">
-                    <input id="check" type="checkbox" />
-                    <label class="text-sm" for="check"
+                  <div class="mt-4 flex lg:items-center items-start gap-2">
+                    <input class="mt-1 lg:mt-0" id="check" type="checkbox" />
+                    <label class="lg:text-sm text-xs" for="check"
                       >I consent to receiving SMS text messages and phone call
                       from Legal Crystal.
                     </label>
@@ -120,73 +121,73 @@
                   <div class="w-full">
                     <p class="text-black">Country</p>
                     <input
-                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                       type="text"
                       name=""
                       id=""
-                      placeholder="Input Country"
+                      placeholder="Enter Country"
                     />
                   </div>
                   <div class="flex mt-5 gap-5 justify-between">
                     <div class="w-1/2">
                       <p class="text-black">Street Address</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="email"
                         name=""
                         id=""
-                        placeholder="Input Street address"
+                        placeholder="Enter Street address"
                       />
                     </div>
                     <div class="w-1/2">
                       <p class="text-black">Address (Cont)</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="text"
                         name=""
                         id=""
-                        placeholder="Input address cont"
+                        placeholder="Enter address cont"
                       />
                     </div>
                   </div>
                   <div class="w-full mt-5">
                     <p class="text-black">City</p>
                     <input
-                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                      class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                       type="text"
                       name=""
                       id=""
-                      placeholder="Input city"
+                      placeholder="Enter city"
                     />
                   </div>
                   <div class="flex mt-5 gap-5 justify-between">
                     <div class="w-1/2">
                       <p class="text-black">State</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="email"
                         name=""
                         id=""
-                        placeholder="Input State"
+                        placeholder="Enter State"
                       />
                     </div>
                     <div class="w-1/2">
                       <p class="text-black">Zip Code</p>
                       <input
-                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-full mt-2"
+                        class="py-3 w-full outline-none border border-gray-100 px-3 rounded-2xl lg:rounded-full lg:text-sm text-xs mt-2"
                         type="number"
                         name=""
                         id=""
-                        placeholder="Input Zip Code"
+                        placeholder="Enter Zip Code"
                       />
                     </div>
                   </div>
                 </form>
-                <div class="bg-white mt-5 py-3 px-5 rounded-2xl">
+                <div class="bg-white mt-5 py-3 lg:px-5 px-2 rounded-2xl">
                   <div class="flex gap-2">
-                    <div>
+                    <div class="lg:w-20 w-44">
                       <img
-                        width="50"
+                        class="w-full"
                         src="./assets/images/lamp-charge.png"
                         alt="lamp"
                       />
@@ -390,25 +391,39 @@
           <div>
             <p class="text-xs">© 2024 LEGAL CRYSTAL. All right reserved.</p>
           </div>
-          <div class="flex gap-3 items-center">
-            <div>
+          <div class="flex gap-3 lg:items-center justify-center lg:justify-end">
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/instagram.png" alt="instagram"
+                ><img
+                  class="w-full"
+                  src="./assets/images/instagram.png"
+                  alt="instagram"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#"
-                ><img src="./assets/images/facebook.png" alt="facebook"
+                ><img
+                  class="w-full"
+                  src="./assets/images/facebook.png"
+                  alt="facebook"
               /></a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/twitter.png" alt="twitter" />
+                <img
+                  class="w-full"
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                />
               </a>
             </div>
-            <div>
+            <div class="w-1/12">
               <a href="#">
-                <img src="./assets/images/linkdin.png" alt="linkdin" />
+                <img
+                  class="w-full"
+                  src="./assets/images/linkdin.png"
+                  alt="linkdin"
+                />
               </a>
             </div>
           </div>
